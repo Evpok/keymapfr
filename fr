@@ -142,7 +142,7 @@ xkb_symbols "oss" {
     key <AD09>	{ [                o,                O,                   oe,                    OE ] }; // o O œ Œ
     key <AD10>	{ [                p,                P,          ocircumflex,           Ocircumflex ] }; // p P ô Ô
     key <AD11>	{ [  dead_circumflex,   dead_diaeresis,           dead_tilde,        dead_abovering ] }; // ^ ̈ ̃ ˚
-    key <AD12>	{ [           dollar,         sterling,               oslash,              Ooblique ] }; // $ £ ø Ø
+    key <AD12>	{ [           dollar,         sterling,        dead_currency,            squareroot ] }; // $ £ ¤ √
 
     // Third row
     key <AC01>	{ [                q,                Q,           adiaeresis,            Adiaeresis ] }; // q Q ä Ä
