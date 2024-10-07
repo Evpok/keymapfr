@@ -165,7 +165,7 @@ xkb_symbols "oss" {
     key <AB03>  { [                c,                C,            copyright,            registered ] }; // c C © ®
     key <AB04>  { [                v,                V,            rightarrow,            leftarrow ] }; // v V → ←
     key <AB05>  { [                b,                B,            downarrow,               uparrow ] }; // b B ↓ ↑
-    key <AB06>  { [                n,                N,              ntilde,                 NTILDE ] }; // n N ñ Ñ
+    key <AB06>  { [                n,                N,              ntilde,                 Ntilde ] }; // n N ñ Ñ
     key <AB07>  { [            comma,         question,         questiondown,             0x1002026 ] }; // , ? ¿ …
     key <AB08>  { [        semicolon,           period,             multiply,             0x10022C5 ] }; // ; . × ⋅
     key <AB09>  { [            colon,            slash,             division,             0x1002215 ] }; // : / ÷ ∕
