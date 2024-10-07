@@ -98,8 +98,8 @@ xkb_symbols "nodeadkeys" {
 // ┃        ┃ Q Ä │ S „ │ D Ë │ F ‚ │ G ¥ │ H Ð │ J Ü │ K Ï │ L Ŀ │ M Ö │ % Ù │ µ ̄  ┃      ┃
 // ┃Maj ⇬   ┃ q ä │ s ß │ d ë │ f ‘ │ g ’ │ h ð │ j ü │ k ï │ l ŀ │ m ö │ ù ' │ * ` ┃      ┃
 // ┣━━━━━━━┳┹────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┬┴────┲┷━━━━━┻━━━━━━┫
-// ┃       ┃ > ≥ │ W “ │ X ” │ C ® │ V ← │ B ↑ │ N → │ ? … │ . . │ / ∕ │ § − ┃             ┃
-// ┃Shift ⇧┃ < ≤ │ w « │ x » │ c © │ v ⍽ │ b ↓ │ n ¬ │ , ¿ │ ; × │ : ÷ │ ! ¡ ┃Shift ⇧      ┃
+// ┃       ┃ > ≥ │ W “ │ X ” │ C ® │ V ← │ B ↑ │ N Ñ │ ? … │ . . │ / ∕ │ § − ┃             ┃
+// ┃Shift ⇧┃ < ≤ │ w « │ x » │ c © │ v → │ b ↓ │ n ñ │ , ¿ │ ; × │ : ÷ │ ! ¡ ┃Shift ⇧      ┃
 // ┣━━━━━━━╋━━━━━┷━┳━━━┷━━━┱─┴─────┴─────┴─────┴─────┴─────┴───┲━┷━━━━━╈━━━━━┻━┳━━━━━━━┳━━━┛
 // ┃       ┃       ┃       ┃ ␣         Espace fine insécable ⍽ ┃       ┃       ┃       ┃
 // ┃Ctrl   ┃Meta   ┃Alt    ┃ ␣ Espace       Espace insécable ⍽ ┃AltGr ⇮┃Menu   ┃Ctrl   ┃
@@ -156,16 +156,16 @@ xkb_symbols "oss" {
     key <AC09>	{ [                l,                L,            0x1000140,             0x100013F ] }; // l L ŀ Ŀ
     key <AC10>	{ [                m,                M,           odiaeresis,            Odiaeresis ] }; // m M ö Ö
     key <AC11>	{ [           ugrave,          percent,           dead_acute,                Ugrave ] }; // ù % ' Ù
-    key <BKSL>	{ [         asterisk,       dead_greek,           dead_macron ] };                       // * dead_greek ` ̄
+    key <BKSL>	{ [         asterisk,       dead_greek,           dead_macron                       ] }; // * dead_greek ` ̄
 
     // Fourth row
     key <LSGT>  { [             less,          greater,                U2A7D,                 U2A7E ] }; // < > ⩽  ⩾
     key <AB01>  { [                w,                W,        guillemotleft,   leftdoublequotemark ] }; // w W « “
     key <AB02>  { [                x,                X,       guillemotright,  rightdoublequotemark ] }; // x X » ”
     key <AB03>  { [                c,                C,            copyright,            registered ] }; // c C © ®
-    key <AB04>  { [                v,                V,            0x100202F,             leftarrow ] }; // v V ⍽ ← (espace fine insécable)
+    key <AB04>  { [                v,                V,            rightarrow,            leftarrow ] }; // v V → ←
     key <AB05>  { [                b,                B,            downarrow,               uparrow ] }; // b B ↓ ↑
-    key <AB06>  { [                n,                N,              ntilde,            rightarrow ] }; // n N ñ →
+    key <AB06>  { [                n,                N,              ntilde,                 NTILDE ] }; // n N ñ Ñ
     key <AB07>  { [            comma,         question,         questiondown,             0x1002026 ] }; // , ? ¿ …
     key <AB08>  { [        semicolon,           period,             multiply,             0x10022C5 ] }; // ; . × ⋅
     key <AB09>  { [            colon,            slash,             division,             0x1002215 ] }; // : / ÷ ∕
